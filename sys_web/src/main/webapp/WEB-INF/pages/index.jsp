@@ -2,7 +2,7 @@
 <%@ include file="base.jsp" %>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<title>陕西杰信商务综合管理平台</title>
+<title>商务综合管理平台</title>
 	<link rel="stylesheet" rev="stylesheet" type="text/css" href="${ctx}/skin/default/css/login.css" media="all" />
 	<script src="${ctx}/components/pngfix/DD_belatedPNG.js"></script>
 	<script> DD_belatedPNG.fix('*'); </script>

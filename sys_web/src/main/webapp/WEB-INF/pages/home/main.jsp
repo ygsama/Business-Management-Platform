@@ -234,7 +234,7 @@ window.onerror = killErrors;
 				<tr>
 					<td background="${ctx}/images/olmsg/C0FFE52.gif">
 					<div class="msgcontent">
-					欢迎使用杰管理平台
+					欢迎使用商务管理平台
 					</div>
 					
 					

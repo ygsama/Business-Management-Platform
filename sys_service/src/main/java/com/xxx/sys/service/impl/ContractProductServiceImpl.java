@@ -101,8 +101,6 @@ public class ContractProductServiceImpl implements ContractProductService {
 		// 6.更新购销合同总金额
 		baseDao.saveOrUpdate(c);
 		// 删除货物对象 级联删除附件
-		baseDao.deleteById(ContractProduct.class, model.getId());
-		
+		baseDao.deleteById(ContractProduct.class, model.getId());	
 	}
-
 }
