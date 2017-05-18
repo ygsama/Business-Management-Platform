@@ -52,7 +52,11 @@
 		<property name="extCproductAction" ref="extCproductAction"></property>
 		<property name="factoryService" ref="factoryService"></property>
 	</bean>
-
+	
+	<!-- 出货表 -->
+	<bean id="outProductAction" class="com.xxx.sys.action.cargo.OutProductAction" scope="prototype">
+		<property name="contractProductService" ref="contractProductService"></property>
+	</bean>
 	
 	
 	

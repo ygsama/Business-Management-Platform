@@ -25,6 +25,9 @@
 			<result name="toupdate">/WEB-INF/pages/cargo/contract/jExtCproductUpdate.jsp</result>
 		</action>
 		
+		<action name="outProductAction_*" class="com.xxx.sys.action.cargo.OutProductAction" method="{1}">
+			<result name="toedit">/WEB-INF/pages/cargo/outproduct/jOutProduct.jsp</result>
+		</action>
 		
 		
 			
