@@ -58,6 +58,11 @@
 		<property name="contractProductService" ref="contractProductService"></property>
 	</bean>
 	
+	<!-- 出口报运 -->
+	<bean id="ExportAction" class="com.xxx.sys.action.cargo.ExportAction" scope="prototype">
+		<property name="exportService" ref="exportService"></property>
+		<property name="contractService" ref="contractService"></property>
+	</bean>
 	
 	
 </beans>

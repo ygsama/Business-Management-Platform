@@ -30,5 +30,8 @@
 		<mapping resource="com/xxx/sys/domain/ExtCproduct.hbm.xml"></mapping>
 		<mapping resource="com/xxx/sys/domain/Factory.hbm.xml"></mapping>
 
+		<mapping resource="com/xxx/sys/domain/Export.hbm.xml"></mapping>
+		<mapping resource="com/xxx/sys/domain/ExportProduct.hbm.xml"></mapping>
+		<mapping resource="com/xxx/sys/domain/ExtEproduct.hbm.xml"></mapping>
 	</session-factory>
 	</hibernate-configuration>

@@ -60,7 +60,7 @@
 	            <td class="columnTitle">唛头：</td>
 	            <td class="tableContent"><pre>${marks}</pre></td>
 	            <td class="columnTitle">备注：</td>
-	            <td class="tableContent"><pre>${remark}</pre></td>
+	            <td class="tableContent">${remark}</td>
 	        </tr>	
 		</table>
 	</div>
