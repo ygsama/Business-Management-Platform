@@ -142,7 +142,7 @@ public class ExportAction extends BaseAction implements ModelDriven<Export> {
 		
 		// 调用业务方法
 		exportService.saveOrUpdate(model);
-		return "alist";
+		return contractList();
 	}
 	
 	/**
