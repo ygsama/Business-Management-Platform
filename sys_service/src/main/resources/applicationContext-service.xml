@@ -44,8 +44,16 @@
 		<property name="baseDao" ref="baseDao"></property>
 	</bean>
 	
-	
-	
+<!-- ******************************************************* -->
+	<bean id="exportService" class="com.xxx.sys.service.impl.ExportServiceImpl">
+		<property name="baseDao" ref="baseDao"></property>
+	</bean>
+	<bean id="exportProductService" class="com.xxx.sys.service.impl.ExportProductServiceImpl">
+		<property name="baseDao" ref="baseDao"></property>
+	</bean>
+	<bean id="extEproductService" class="com.xxx.sys.service.impl.ExtEproductServiceImpl">
+		<property name="baseDao" ref="baseDao"></property>
+	</bean>
 	
 	
 	
