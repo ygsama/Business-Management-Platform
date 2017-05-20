@@ -2,6 +2,7 @@ package com.xxx.sys.service.impl;
 
 import java.io.Serializable;
 import java.util.Collection;
+import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
@@ -61,6 +62,7 @@ public class ExportServiceImpl implements ExportService {
 			}
 			entity.setCustomerContract(sb.toString());// 设置合同及确认书号
 			entity.setContractIds(UtilFuns.joinStr(ids,","));
+			entity.setInputDate(new Date());// 设置制单日期
 			
 			// 通过购销合同的集合，跳跃查询出购销合同下面的货物列表	'100,101,102'-->'100','101','102'
 			String hql="from ContractProduct where contract.id in ("+UtilFuns.joinInStr(ids)+")";
