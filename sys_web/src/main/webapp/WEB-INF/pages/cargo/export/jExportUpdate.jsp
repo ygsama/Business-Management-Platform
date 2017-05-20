@@ -14,7 +14,14 @@
 		//发送ajax请求-------------返回json------------后面就去组织数据（调用函数）
 		//当进入更新页面时-----------直接获取服务器返回的串
 		
-		
+    });
+    
+    $(document).ready(function(){
+    	$("#mRecordTable:input[type='text']").blur(
+    		function(){
+    			setTRUpdateFlag(this);
+    		}		
+    	);
     });
     
 
