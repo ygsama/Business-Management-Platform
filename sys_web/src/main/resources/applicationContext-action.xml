@@ -62,7 +62,9 @@
 	<bean id="ExportAction" class="com.xxx.sys.action.cargo.ExportAction" scope="prototype">
 		<property name="exportService" ref="exportService"></property>
 		<property name="contractService" ref="contractService"></property>
+		<property name="exportProductService" ref="exportProductService"></property>
 	</bean>
+	
 	
 	
 </beans>
