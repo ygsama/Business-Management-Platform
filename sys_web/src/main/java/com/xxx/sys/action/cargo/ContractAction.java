@@ -1,5 +1,9 @@
 package com.xxx.sys.action.cargo;
 
+import javax.servlet.http.HttpServletResponse;
+
+import org.apache.struts2.ServletActionContext;
+
 import com.opensymphony.xwork2.ModelDriven;
 import com.xxx.sys.action.BaseAction;
 import com.xxx.sys.domain.Contract;
@@ -191,4 +195,29 @@ public class ContractAction extends BaseAction implements ModelDriven<Contract> 
 		contractService.changeState(ids, 0);
 		return "alist";
 	}
+	
+	/**
+	 * 打印
+	 */
+	public String print() throws Exception{
+		// 根据购销合同的id，得到购销合同对象
+		Contract contract = contractService.get(Contract.class, model.getId());
+		
+		// 指定path
+		String path = ServletActionContext.getServletContext().getRealPath("/");//应用程序根路经
+		
+		// 指定response
+		HttpServletResponse response = ServletActionContext.getResponse();
+		
+		ContractPrint cp = new ContractPrint();
+		cp.print(contract, path, response);
+		
+		return NONE;
+	}
+	
+	
+	
+	
+	
+	
 }
