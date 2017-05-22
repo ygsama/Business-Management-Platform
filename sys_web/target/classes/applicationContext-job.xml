@@ -17,7 +17,9 @@
 	<description>Quartz配置文件</description>
 	
 	<!-- 定义一个任务 -->
-	<bean id="mailJob" class="com.xxx.sys.job.MailJob"></bean>
+	<bean id="mailJob" class="com.xxx.sys.job.MailJob">
+		<property name="contractService" ref="contractService"></property>
+	</bean>
 	
 	<!-- 定义一个 MethodInvokingJobDetailFactoryBean-->
 	<bean id="methodInvoking" class="org.springframework.scheduling.quartz.MethodInvokingJobDetailFactoryBean">
