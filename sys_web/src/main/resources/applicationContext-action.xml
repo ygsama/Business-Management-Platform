@@ -59,12 +59,16 @@
 	</bean>
 	
 	<!-- 出口报运 -->
-	<bean id="ExportAction" class="com.xxx.sys.action.cargo.ExportAction" scope="prototype">
+	<bean id="exportAction" class="com.xxx.sys.action.cargo.ExportAction" scope="prototype">
 		<property name="exportService" ref="exportService"></property>
 		<property name="contractService" ref="contractService"></property>
 		<property name="exportProductService" ref="exportProductService"></property>
 	</bean>
 	
+	<!-- 统计分析 -->
+	<bean id="statChartAction" class="com.xxx.sys.action.statistics.StatChartAction" scope="prototype">
+		<property name="sqlDao" ref="sqlDao"></property>
+	</bean>
 	
 	
 </beans>
